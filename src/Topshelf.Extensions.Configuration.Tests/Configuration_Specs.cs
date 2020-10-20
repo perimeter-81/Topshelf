@@ -613,6 +613,12 @@ namespace Topshelf.Extensions.Configuration.Tests
                 throw new NotImplementedException();
             }
 
+            public void SetCanStop(bool canStop)
+            {
+                throw new NotImplementedException();
+            }
+
+
             public void UseEnvironmentBuilder(EnvironmentBuilderFactory environmentBuilderFactory)
             {
                 throw new NotImplementedException();

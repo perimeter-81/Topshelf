@@ -188,6 +188,11 @@ namespace Topshelf.Hosts
                 get { return _settings.CanHandlePowerEvent; }
             }
 
+            public bool CanStop
+            {
+                get { return _settings.CanStop; }
+            }
+
             public Credentials Credentials
             {
                 get { return _credentials; }

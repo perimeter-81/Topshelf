@@ -66,6 +66,8 @@ namespace Topshelf.Runtime
         /// </summary>
         bool CanHandlePowerEvent { get; }
 
+        bool CanStop { get; }
+
         /// <summary>
         /// The amount of time to wait for the service to start before timing out. Default is 10 seconds.
         /// </summary>

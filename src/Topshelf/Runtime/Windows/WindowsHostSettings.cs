@@ -110,6 +110,8 @@ namespace Topshelf.Runtime.Windows
         
         public TimeSpan StopTimeOut { get; set; }
 
+        public bool CanStop { get; set; } = true;
+
         public NameValueCollection ServiceArguments
         {
             get { return serviceArguments; }
