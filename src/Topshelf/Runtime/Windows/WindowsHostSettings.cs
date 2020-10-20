@@ -13,6 +13,7 @@
 namespace Topshelf.Runtime.Windows
 {
     using System;
+    using System.Collections.Specialized;
 
     [Serializable]
     public class WindowsHostSettings :
@@ -21,6 +22,7 @@ namespace Topshelf.Runtime.Windows
         public const string InstanceSeparator = "$";
         string _description;
         string _displayName;
+        readonly NameValueCollection serviceArguments = new NameValueCollection();
 
         /// <summary>
         ///   Creates a new WindowsServiceDescription using empty strings for the properties. The class is required to have names by the consumers.
@@ -107,6 +109,11 @@ namespace Topshelf.Runtime.Windows
         public TimeSpan StartTimeOut { get; set; }
         
         public TimeSpan StopTimeOut { get; set; }
+
+        public NameValueCollection ServiceArguments
+        {
+            get { return serviceArguments; }
+        }
 
         public Action<Exception> ExceptionCallback { get; set; }
 

@@ -538,6 +538,11 @@ namespace Topshelf.Extensions.Configuration.Tests
                 throw new NotImplementedException();
             }
 
+            public void AddServiceArgument(string name, string value)
+            {
+                throw new NotImplementedException();
+            }
+
             public void AddCommandLineSwitch(string name, Action<bool> callback)
             {
                 throw new NotImplementedException();

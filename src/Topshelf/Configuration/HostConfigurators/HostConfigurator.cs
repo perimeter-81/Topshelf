@@ -128,6 +128,8 @@ namespace Topshelf.HostConfigurators
         /// <param name="callback"></param>
         void AddCommandLineDefinition(string name, Action<string> callback);
 
+        void AddServiceArgument(string name, string value);
+
         /// <summary>
         /// Specifies a callback to be run when Topshelf encounters an exception while starting, running
         /// or stopping. This callback does not replace Topshelf's default handling of any exceptions, and 

@@ -142,6 +142,11 @@ namespace Topshelf.Runtime.Windows
             if (!string.IsNullOrEmpty(settings.Name))
                 arguments += $" -servicename \"{settings.Name}\"";
 
+            foreach (string argName in settings.ServiceArguments.AllKeys)
+            {
+                arguments += string.Format(" -{0} \"{1}\"", argName, settings.ServiceArguments[argName]);
+            }
+
             return new HostInstaller(settings, arguments, installers);
         }
 

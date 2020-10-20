@@ -193,6 +193,11 @@ namespace Topshelf.HostConfigurators
             _commandLineOptionConfigurators.Add(configurator);
         }
 
+        public void AddServiceArgument(string name, string value)
+        {
+            _settings.ServiceArguments[name] = value;
+        }
+
         public void OnException(Action<Exception> callback)
         {
             _settings.ExceptionCallback = callback;

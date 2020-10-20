@@ -13,6 +13,7 @@
 namespace Topshelf.Runtime
 {
     using System;
+    using System.Collections.Specialized;
 
     /// <summary>
     ///   The settings that have been configured for the operating system service
@@ -74,6 +75,8 @@ namespace Topshelf.Runtime
         /// The amount of time to wait for the service to stop before timing out. Default is 10 seconds.
         /// </summary>
         TimeSpan StopTimeOut { get; }
+
+        NameValueCollection ServiceArguments { get; }
 
         /// <summary>
         /// A callback to provide visibility into exceptions while Topshelf is performing its
