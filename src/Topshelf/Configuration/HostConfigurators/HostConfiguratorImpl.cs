@@ -117,6 +117,11 @@ namespace Topshelf.HostConfigurators
             _settings.StopTimeOut = stopTimeOut;
         }
 
+        public void SetCanStop(bool canStop)
+        {
+            _settings.CanStop = canStop;
+        }
+
         public void EnablePauseAndContinue()
         {
             _settings.CanPauseAndContinue = true;

@@ -53,6 +53,8 @@ namespace Topshelf.HostConfigurators
         /// <param name="stopTimeOut"></param>
         void SetStopTimeout(TimeSpan stopTimeOut);
 
+        void SetCanStop(bool canStop);
+
         /// <summary>
         /// Enable pause and continue support for the service (default is disabled)
         /// </summary>

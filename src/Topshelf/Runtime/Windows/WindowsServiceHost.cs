@@ -47,6 +47,7 @@ namespace Topshelf.Runtime.Windows
             _environment = environment;
             _configurator = configurator;
 
+            CanStop = settings.CanStop;
             CanPauseAndContinue = settings.CanPauseAndContinue;
             CanShutdown = settings.CanShutdown;
             CanHandlePowerEvent = settings.CanHandlePowerEvent;
