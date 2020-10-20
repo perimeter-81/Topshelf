@@ -70,6 +70,8 @@ namespace Topshelf.HostConfigurators
                     select (Option)new LocalServiceOption())
                 .Or(from autostart in x.Switch("networkservice")
                     select (Option)new NetworkServiceOption())
+                .Or(from serviceArg in x.Definition("arg")
+                    select (Option)new ServiceArgOption(serviceArg.Value))
 );
         }
 

@@ -14,6 +14,7 @@ namespace Topshelf.Hosts
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Specialized;
     using System.Linq;
     using System.ServiceProcess;
     using Logging;
@@ -211,6 +212,11 @@ namespace Topshelf.Hosts
             public TimeSpan StopTimeOut
             {
               get { return _settings.StopTimeOut; }
+            }
+
+            public NameValueCollection ServiceArguments
+            {
+                get { return _settings.ServiceArguments; }
             }
 
             public Action<Exception> ExceptionCallback
