@@ -65,14 +65,14 @@ namespace Topshelf.Runtime.Windows
 
             _log.Info("Starting as a Windows service");
 
-            if (!_environment.IsServiceInstalled(_settings.ServiceName))
-            {
-                string message = $"The {_settings} service has not been installed yet. Please run '{Assembly.GetEntryAssembly().GetName()} install'.";
-                _log.Fatal(message);
+            //if (!_environment.IsServiceInstalled(_settings.ServiceName))
+            //{
+            //    string message = $"The {_settings} service has not been installed yet. Please run '{Assembly.GetEntryAssembly().GetName()} install'.";
+            //    _log.Fatal(message);
 
-                ExitCode = (int) TopshelfExitCode.ServiceNotInstalled;
-                throw new TopshelfException(message);
-            }
+            //    ExitCode = (int) TopshelfExitCode.ServiceNotInstalled;
+            //    throw new TopshelfException(message);
+            //}
 
             _log.Debug("[Topshelf] Starting up as a windows service application");
 
