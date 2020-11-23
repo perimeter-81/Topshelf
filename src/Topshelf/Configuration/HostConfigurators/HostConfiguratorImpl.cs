@@ -126,6 +126,11 @@ namespace Topshelf.HostConfigurators
             _settings.CanPauseAndContinue = true;
         }
 
+        public void EnablePowerEventsHandling()
+        {
+            _settings.CanHandlePowerEvent = true;
+        }
+
         public void EnableShutdown()
         {
             _settings.CanShutdown = true;

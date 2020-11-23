@@ -65,6 +65,8 @@ namespace Topshelf.HostConfigurators
         /// </summary>
         void EnableShutdown();
 
+        void EnablePowerEventsHandling();
+
         /// <summary>
         /// Enabled support for the session changed event
         /// </summary>
