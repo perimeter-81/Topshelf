@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Topshelf</id>
+    <id>Topshelf.NLog</id>
     <version>4.0.1.0</version>
-    <title>Topshelf</title>
+    <title>Topshelf.NLog</title>
     <authors>Chris Patterson, Dru Sellers, Travis Smith</authors>
     <owners>Chris Patterson, Dru Sellers, Travis Smith</owners>
     <licenseUrl>https://github.com/Topshelf/Topshelf/blob/master/LICENSE</licenseUrl>
@@ -15,12 +15,15 @@
     <tags>topshelf</tags>
 
     <dependencies>
-      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Topshelf" version="4.0.1" />
+        <dependency id="NLog" version="4.5.11" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-     <file src="Topshelf.dll" target="lib\net45\Topshelf.dll" />
-     <file src="Topshelf.pdb" target="lib\net45\Topshelf.pdb" />
-     <file src="Topshelf.xml" target="lib\net45\Topshelf.xml" />
+     <file src="Topshelf.NLog.dll" target="lib\net45\Topshelf.NLog.dll" />
+     <file src="Topshelf.NLog.pdb" target="lib\net45\Topshelf.NLog.pdb" />
+     <file src="Topshelf.NLog.xml" target="lib\net45\Topshelf.NLog.xml" />
   </files>
 </package>
