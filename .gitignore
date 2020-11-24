@@ -36,3 +36,5 @@ tools/**
 
 # Artifacts
 artifacts/**
+
+# p81 nuget*.nupkg
