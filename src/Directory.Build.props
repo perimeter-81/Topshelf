@@ -8,6 +8,7 @@
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>4.0.5.1</Version>
     <WarningLevel>4</WarningLevel>
     <NoWarn>CS1587,CS1591,CS1998,CS0675,CS1998,CS3008,CS3001,NU5105</NoWarn>
     <DebugSymbols>True</DebugSymbols>

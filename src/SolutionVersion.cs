@@ -4,18 +4,18 @@ using System.Reflection;
 [assembly: AssemblyTitleAttribute("Topshelf")]
 [assembly: AssemblyDescriptionAttribute("Topshelf is an open source project for hosting services without friction. By referencing Topshelf, your console application *becomes* a service installer with a comprehensive set of command-line options for installing, configuring, and running your application as a service.")]
 [assembly: AssemblyProductAttribute("Topshelf")]
-[assembly: AssemblyVersionAttribute("4.0.0.0")]
-[assembly: AssemblyFileVersionAttribute("4.0.3.0")]
-[assembly: AssemblyInformationalVersionAttribute("4.0.3.0 (develop/0b352d8c)")]
+[assembly: AssemblyVersionAttribute("4.0.5.1")]
+[assembly: AssemblyFileVersionAttribute("4.0.5.1")]
+[assembly: AssemblyInformationalVersionAttribute("4.0.5.1 (develop/0b352d8c)")]
 [assembly: AssemblyCopyrightAttribute("Copyright 2012 Chris Patterson, Dru Sellers, Travis Smith, All rights reserved.")]
 namespace System {
     internal static class AssemblyVersionInformation {
         internal const System.String AssemblyTitle = "Topshelf";
         internal const System.String AssemblyDescription = "Topshelf is an open source project for hosting services without friction. By referencing Topshelf, your console application *becomes* a service installer with a comprehensive set of command-line options for installing, configuring, and running your application as a service.";
         internal const System.String AssemblyProduct = "Topshelf";
-        internal const System.String AssemblyVersion = "4.0.0.0";
-        internal const System.String AssemblyFileVersion = "4.0.3.0";
-        internal const System.String AssemblyInformationalVersion = "4.0.3.0 (develop/0b352d8c)";
+        internal const System.String AssemblyVersion = "4.0.5.1";
+        internal const System.String AssemblyFileVersion = "4.0.5.1";
+        internal const System.String AssemblyInformationalVersion = "4.0.5.1 (develop/0b352d8c)";
         internal const System.String AssemblyCopyright = "Copyright 2012 Chris Patterson, Dru Sellers, Travis Smith, All rights reserved.";
     }
 }

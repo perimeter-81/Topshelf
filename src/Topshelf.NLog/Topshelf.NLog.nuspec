@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Topshelf.NLog</id>
-    <version>4.0.1.0</version>
+    <version>4.0.5.1</version>
     <title>Topshelf.NLog</title>
     <authors>Chris Patterson, Dru Sellers, Travis Smith</authors>
     <owners>Chris Patterson, Dru Sellers, Travis Smith</owners>
@@ -16,7 +16,7 @@
 
     <dependencies>
       <group targetFramework=".NETFramework4.5">
-        <dependency id="Topshelf" version="4.0.1" />
+        <dependency id="Topshelf" version="4.0.5.1" />
         <dependency id="NLog" version="4.5.11" />
       </group>
     </dependencies>
