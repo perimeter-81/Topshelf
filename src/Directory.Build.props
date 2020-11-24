@@ -12,6 +12,7 @@
     <PackageTags>Topshelf</PackageTags>
     <Authors>Chris Patterson;Dru Sellers;Travis Smith</Authors>
     <Copyright>Copyright 2007-2018 Chris Patterson, Dru Sellers, Travis Smith, et. al.</Copyright>
+    <Version>4.0.5.1</Version>
     <WarningLevel>4</WarningLevel>
     <NoWarn>1587,1591,1998,3008,3001</NoWarn>
   </PropertyGroup>
