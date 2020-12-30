@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\Topshelf.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
@@ -23,6 +23,11 @@
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <ProjectReference Include="..\TopShelf.ServiceInstaller\TopShelf.ServiceInstaller.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Internals\Mapping\DynamicObjectMapperCache.cs" />
+    <Compile Remove="Internals\Reflection\DynamicImplementationBuilder.cs" />
   </ItemGroup>
 
   <ItemGroup>
