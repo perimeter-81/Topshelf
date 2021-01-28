@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Topshelf</id>
-    <version>4.0.5.1</version>
+    <version>4.3.0.1</version>
     <title>Topshelf</title>
     <authors>Chris Patterson, Dru Sellers, Travis Smith</authors>
     <owners>Chris Patterson, Dru Sellers, Travis Smith</owners>
@@ -10,17 +10,17 @@
     <projectUrl>https://github.com/Topshelf/Topshelf</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Topshelf is an open source project for hosting services without friction. By referencing Topshelf, your console application *becomes* a service installer with a comprehensive set of command-line options for installing, configuring, and running your application as a service.</description>
-    <releaseNotes>Support for .net 4.5 and minor changes</releaseNotes>
+    <releaseNotes>Support for .net 5</releaseNotes>
     <copyright>Copyright Chris Patterson, Dru Sellers, Travis Smith, 2020</copyright>
     <tags>topshelf</tags>
 
     <dependencies>
-      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETStandard2.0" />
     </dependencies>
   </metadata>
   <files>
-     <file src="Topshelf.dll" target="lib\net45\Topshelf.dll" />
-     <file src="Topshelf.pdb" target="lib\net45\Topshelf.pdb" />
-     <file src="Topshelf.xml" target="lib\net45\Topshelf.xml" />
+     <file src="Topshelf.dll" target="lib\netstandard2.0\Topshelf.dll" />
+     <file src="Topshelf.pdb" target="lib\netstandard2.0\Topshelf.pdb" />
+     <file src="Topshelf.xml" target="lib\netstandard2.0\Topshelf.xml" />
   </files>
 </package>

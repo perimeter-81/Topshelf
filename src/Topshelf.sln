@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topshelf", "Topshelf\Topshelf.csproj", "{A52AD64D-6455-4A22-8CCF-581851086578}"
 EndProject
@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topshelf.Extensions.Logging
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topshelf.Extensions.Configuration.Tests", "Topshelf.Extensions.Configuration.Tests\Topshelf.Extensions.Configuration.Tests.csproj", "{98E391A8-3132-4D60-818A-A68A62254068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopShelf.ServiceInstaller", "TopShelf.ServiceInstaller\TopShelf.ServiceInstaller.csproj", "{699FB86C-E57F-4750-BE0F-ACDCC3F19364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopShelf.ServiceInstaller", "TopShelf.ServiceInstaller\TopShelf.ServiceInstaller.csproj", "{699FB86C-E57F-4750-BE0F-ACDCC3F19364}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,6 +108,7 @@ Global
 		{55FC6F5C-778F-4E77-8C55-C62216858CE7}.Release|x86.ActiveCfg = Release|Any CPU
 		{55FC6F5C-778F-4E77-8C55-C62216858CE7}.ReleaseUnsigned|Any CPU.ActiveCfg = Release|Any CPU
 		{55FC6F5C-778F-4E77-8C55-C62216858CE7}.ReleaseUnsigned|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{55FC6F5C-778F-4E77-8C55-C62216858CE7}.ReleaseUnsigned|Mixed Platforms.Build.0 = Release|Any CPU
 		{55FC6F5C-778F-4E77-8C55-C62216858CE7}.ReleaseUnsigned|x86.ActiveCfg = Release|Any CPU
 		{B6990D65-5B8A-4332-B01F-DE60D7042F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B6990D65-5B8A-4332-B01F-DE60D7042F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
