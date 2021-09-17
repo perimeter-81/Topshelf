@@ -38,20 +38,20 @@ jobs:
     - name: Pack (Topshelf.NLog)
       run: dotnet pack -c Release
       working-directory: src/Topshelf.NLog
-    - name: Publish Topshelf to GitHub registry
+    - name: Publish Topshelf.NLog to GitHub registry
       run: dotnet nuget push src/Topshelf.NLog/bin/Release/*.nupkg -k ${GITHUB_TOKEN} -s https://nuget.pkg.github.com/safervpn/index.json --skip-duplicate 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Restore dependencies (Topshelf.ServiceInstaller)
+    - name: Restore dependencies (TopShelf.ServiceInstaller)
       run: dotnet restore
-      working-directory: src/Topshelf.ServiceInstaller
+      working-directory: src/TopShelf.ServiceInstaller
     - name: Build (Topshelf.ServiceInstaller)
       run: dotnet build -c Release --no-restore
-      working-directory: src/Topshelf.ServiceInstaller
+      working-directory: src/TopShelf.ServiceInstaller
     - name: Pack (Topshelf.ServiceInstaller)
       run: dotnet pack -c Release
-      working-directory: src/Topshelf.ServiceInstaller
-    - name: Publish Topshelf to GitHub registry
-      run: dotnet nuget push src/Topshelf.ServiceInstaller/bin/Release/*.nupkg -k ${GITHUB_TOKEN} -s https://nuget.pkg.github.com/safervpn/index.json --skip-duplicate 
+      working-directory: src/TopShelf.ServiceInstaller
+    - name: Publish Topshelf.ServiceInstaller to GitHub registry
+      run: dotnet nuget push src/TopShelf.ServiceInstaller/bin/Release/*.nupkg -k ${GITHUB_TOKEN} -s https://nuget.pkg.github.com/safervpn/index.json --skip-duplicate 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
