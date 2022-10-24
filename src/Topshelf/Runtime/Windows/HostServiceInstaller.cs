@@ -144,7 +144,17 @@ namespace Topshelf.Runtime.Windows
 
             foreach (string argName in settings.ServiceArguments.AllKeys)
             {
-                arguments += string.Format(" -{0} \"{1}\"", argName, settings.ServiceArguments[argName]);
+                string value = settings.ServiceArguments[argName];
+
+                if (value != null)
+                {
+                    arguments += string.Format(" -{0} \"{1}\"", argName, value);
+                }
+                else
+                {
+                    arguments += $" --{argName}";
+                }
+                
             }
 
             return new HostInstaller(settings, arguments, installers);

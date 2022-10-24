@@ -10,12 +10,23 @@
         public ServiceArgOption(string value)
         {
             var splitIndex = value.IndexOf(':');
-            argName = value.Substring(0, splitIndex);
-            argValue = value.Substring(splitIndex + 1);
+
+            if (splitIndex < 0)
+            {
+                // only value
+                argName = value;
+            }
+            else
+            {
+                // name:value
+                argName = value.Substring(0, splitIndex);
+                argValue = value.Substring(splitIndex + 1);
+            }
         }
 
         public void ApplyTo(HostConfigurator configurator)
         {
+            // argValue is null if the argument is not a `name:value` pair
             configurator.AddServiceArgument(argName, argValue);
         }
     }
